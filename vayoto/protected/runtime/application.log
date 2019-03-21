@@ -1,0 +1,44 @@
+2019/03/21 15:52:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'vayoto'' in E:\APP\Xampp56\htdocs\yii\framework\db\CDbConnection.php:399
+Stack trace:
+#0 E:\APP\Xampp56\htdocs\yii\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 E:\APP\Xampp56\htdocs\yii\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 E:\APP\Xampp56\htdocs\yii\framework\base\CModule.php(394): CDbConnection->init()
+#3 E:\APP\Xampp56\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 E:\APP\Xampp56\htdocs\yii\framework\gii\generators\model\ModelCode.php(60): CModule->__get('db')
+#5 E:\APP\Xampp56\htdocs\yii\framework\web\CFormModel.php(39): ModelCode->init()
+#6 E:\APP\Xampp56\htdocs\yii\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 E:\APP\Xampp56\htdocs\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 E:\APP\Xampp56\htdocs\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 E:\APP\Xampp56\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 E:\APP\Xampp56\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 E:\APP\Xampp56\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\APP\Xampp56\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\APP\Xampp56\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 E:\APP\Xampp56\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\APP\Xampp56\htdocs\yii\vayoto\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/vayoto/index.php?r=gii/model/index
+HTTP_REFERER=http://localhost/yii/vayoto/index.php?r=gii/default/index
+---
+2019/03/21 15:52:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'vayoto'' in E:\APP\Xampp56\htdocs\yii\framework\db\CDbConnection.php:399
+Stack trace:
+#0 E:\APP\Xampp56\htdocs\yii\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 E:\APP\Xampp56\htdocs\yii\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 E:\APP\Xampp56\htdocs\yii\framework\base\CModule.php(394): CDbConnection->init()
+#3 E:\APP\Xampp56\htdocs\yii\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 E:\APP\Xampp56\htdocs\yii\framework\gii\generators\crud\CrudCode.php(44): CModule->__get('db')
+#5 E:\APP\Xampp56\htdocs\yii\framework\web\CFormModel.php(39): CrudCode->init()
+#6 E:\APP\Xampp56\htdocs\yii\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 E:\APP\Xampp56\htdocs\yii\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 E:\APP\Xampp56\htdocs\yii\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 E:\APP\Xampp56\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 E:\APP\Xampp56\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 E:\APP\Xampp56\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\APP\Xampp56\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index')
+#13 E:\APP\Xampp56\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 E:\APP\Xampp56\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\APP\Xampp56\htdocs\yii\vayoto\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yii/vayoto/index.php?r=gii/crud/index
+HTTP_REFERER=http://localhost/yii/vayoto/index.php?r=gii/default/index
+---
