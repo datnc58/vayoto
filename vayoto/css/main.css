@@ -227,3 +227,187 @@ div.search-form
 {
 	background: #80CFFF;
 }
+
+/* vay oto */
+.containerpc {
+	width: 80% !important;
+	margin: 0 auto;
+}
+@media (min-width: 1200px) {
+	.modal-lg {
+		max-width: 1000px !important;
+	}
+}
+@media (min-width: 1820px) {
+	.modal-lg {
+		max-width: 1480px !important;
+	}
+}
+
+.modal-content {
+	background-image: linear-gradient(#2595d2, #6a79d1);
+	border-radius: 10px !important;
+}
+.dichvu {
+	padding: 20px;
+	width: 80%;
+	margin: 0 auto;
+}
+.modal-header {
+	border-bottom: none!important;
+}
+.modal-footer {
+	border-top: none!important;
+}
+
+.modal-header button span {
+	border: 1px solid;
+	padding: 0px 10px 5px 10px;
+	background: white;
+	color: #328fd2;
+	border-radius: 19px;
+}
+.dichvu h1 {
+	color: white;
+	text-align: center;
+	font-size: 32px;
+	padding-bottom: 40px;
+}
+
+.dichvu h1>img {
+	padding-bottom: 10px;
+}
+
+.text-option {
+	color: white;
+	text-align: center;
+	font-size: 28px;
+	padding-bottom: 20px;
+}
+
+.input-hidden {
+	position: absolute;
+	left: -9999px;
+}
+
+.selectedOption {
+	border: 1px solid #fff;
+	box-shadow: 0 0 3px 3px #306499;
+	background: #c8deea !important;
+}
+
+/* Stuff after this is only to make things more pretty */
+
+.optionService {
+	background: white;
+	padding: 20px;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.icon-bg {
+	height: 46px;
+	width: 51px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.icon-bg-thetindung {
+	background: #2695d2;
+}
+.icon-bg-vaytincbap {
+	background: #26d242;
+}
+.icon-bg-vaymuanha {
+	background: #ecb91f;
+}
+.icon-bg-vaythechap {
+	background: #fc9b10;
+}
+.icon-bg-vaymuaxe {
+	background: #4155e9;
+}
+.icon-bg-guitietkiem {
+	background: #038d07;
+}
+.icon-bg-baohiemnhantho {
+	background: #0ba361;
+}
+.icon-bg-baohiemoto {
+	background: #d83e3e;
+}
+.icon-bg-baohiemdulich {
+	background: #c7480a;
+}
+.icon-bg-baohiemnha {
+	background: #43c4bf;
+}
+.icon-bg-baohiembenhhiemngheo {
+	background: #e41dd8;
+}
+.icon-bg-baohiemsuckhoe {
+	background: #ec0606;
+}
+
+.optionService input[type=radio] + label>p {
+	margin-bottom: -10px;
+}
+.optionService input[type=radio]:checked + optionService {
+	background: #c8deea;
+}
+
+.clearfix-70 {
+	margin-bottom: 70px;
+	clear: both;
+}
+
+.form-group-select {
+	width: 260px !important;
+}
+
+.select-right {
+	float: right;
+	margin-right: 20px;
+}
+.select-left {
+	float: left;
+	margin-left: 20px;
+}
+
+.confirm {
+	width: 50%;
+	margin: 0 auto;
+	float: left;
+}
+.prev, .next {
+	width: 33%;
+	float: left;
+}
+.ketqua {
+	width: 30%;
+	float: left;
+}
+.phantram {
+	font-size: 50px;
+	text-align: center;
+	border: 10px solid #8198db;
+	color: white;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	padding-top: 25px;
+	margin: 0 auto;
+}
+.confirm button>img{
+	width: 30px;
+	height: 30px;
+}
+
+.button-next-prev {
+	background: white !important;
+	padding: 20px !important;
+	margin-top: 40px;
+}
