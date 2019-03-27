@@ -411,3 +411,189 @@ div.search-form
 	padding: 20px !important;
 	margin-top: 40px;
 }
+
+.input_error {
+	border: 1px solid red !important;
+}
+
+.info-right {
+	float: right;
+	color: white;
+}
+
+.info-left {
+	float: left;
+	color: white;
+}
+
+.text-from-center {
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.slidecontainer {
+	width: 50%; /* Width of the outside container */
+	margin: 0 auto;
+	position: relative;
+}
+
+/* The slider itself */
+.slider {
+	-webkit-appearance: none;  /* Override default CSS styles */
+	appearance: none;
+	width: 100%; /* Full-width */
+	height: 10px; /* Specified height */
+	background: white; /* Grey background */
+	outline: none; /* Remove outline */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	transition: opacity .2s;
+	border-radius: 4px;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+	opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 11px; /* Set a specific slider handle width */
+	height: 12px; /* Slider handle height */
+	background: #BABABA; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+	width: 11px; /* Set a specific slider handle width */
+	height: 12px; /* Slider handle height */
+	background: #BABABA; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+}
+
+.price-min-max {
+	color: white;
+	width: 100%;
+}
+.price-min {
+	float: left;
+}
+.price-max {
+	float: right;
+}
+
+.slider-selection {
+	background: #BABABA;
+}
+
+.slider-track {
+	height: 10px;
+	top: 20%;
+	left: 0;
+	background: #9ba9c0 !important;
+	border-right: none!important;
+}
+
+#step2,
+#step3,
+#step4,
+#step5,
+#step6,
+#step7,
+#step8,
+#step9 {
+	display: none;
+}
+
+
+ul.radio-check{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	padding-left: 35px;
+}
+
+ul.radio-check li{
+	color: #AAAAAA;
+	display: block;
+	position: relative;
+	float: left;
+	list-style-type: none;
+}
+
+ul.radio-check li input[type=radio]{
+	position: absolute;
+	visibility: hidden;
+}
+
+ul.radio-check li label{
+	display: block;
+	position: relative;
+	font-weight: 300;
+	font-size: 1.35em;
+	padding: 15px 25px 25px 60px;
+	margin: 10px auto;
+	height: 30px;
+	z-index: 9;
+	cursor: pointer;
+	-webkit-transition: all 0.25s linear;
+}
+
+ul.radio-check li:hover label{
+	color: #FFFFFF;
+}
+
+ul.radio-check li .check{
+	display: block;
+	position: absolute;
+	border: 5px solid #ffffff;
+	height: 25px;
+	width: 25px;
+	top: 30px;
+	left: 20px;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+	background: #ffffff;
+}
+
+ul.radio-check li:hover .check {
+	border: 5px solid #FFFFFF;
+}
+
+ul.radio-check li .check::before {
+	display: block;
+	position: absolute;
+	content: '';
+	border-radius: 100%;
+	height: 15px;
+	width: 15px;
+	top: 0;
+	left: 0;
+	margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+}
+
+ul.radio-check input[type=radio]:checked ~ .check {
+	border: 5px solid #ffffff;
+	background: #ffffff;
+}
+
+ul.radio-check input[type=radio]:checked ~ .check::before{
+	background: #3e8ad1;
+}
+
+ul.radio-check input[type=radio]:checked ~ label{
+	color: #ffffff;
+}
+
+.div-hidden {
+	display: none !important;
+}
+

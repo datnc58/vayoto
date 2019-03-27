@@ -27,9 +27,22 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		$listProvince =  Province::model()->getData();
+
+		$this->render('index', [
+			'listProvince' => $listProvince,
+		]);
+	}
+
+	public function actionDistricts()
+	{
+		$data = District::model()->findAll('province_id=:province_id', array(':province_id'=>(int) $_POST['province_id']));
+		$data = CHtml::listData($data, 'id', 'district_name');
+
+		echo "<option value=''>Thành Phố</option>";
+		foreach($data as $value => $district_name) {
+			echo CHtml::tag('option', array('value'=>$value),CHtml::encode($district_name),true);
+		}
 	}
 
 	/**
